@@ -1,0 +1,12 @@
+<%= form_tag inventory_index_path, {id: 'inventory-form'} do %>
+    <%= select_tag 'apparel_types',
+                   options_for_select(@apparels),
+                   include_blank: true
+    %>
+    <%= select_tag 'sizes',
+                   options_for_select(@sizes),
+                   include_blank: true
+    %>
+    <input type="text"/>
+    <%= button_tag 'Submit' %>
+<% end %>

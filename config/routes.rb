@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :inventory, only: [:new, :create]
+  get 'size/index'
+
+  get 'apparel_type/index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
