@@ -5,5 +5,6 @@ class InventoryController < ApplicationController
   end
 
   def create
+
   end
 end
