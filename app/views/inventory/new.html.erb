@@ -1,17 +1,21 @@
 <div class="col-md-offset-4 col-md-4 text-center">
   <%= form_tag inventory_index_path, {id: 'inventory-form'} do %>
+
+    <b class="pull-left"> Apparel Type: </b>
     <%= select_tag 'apparel_types',
                    options_for_select(@apparels),
                    include_blank: true,
                    class: 'form-control'
     %>
       <br>
+    <b class="pull-left"> Size: </b>
     <%= select_tag 'sizes',
                    options_for_select(@sizes),
                    include_blank: true,
                    class: 'form-control'
     %>
       <br>
+    <b  class="pull-left"> Count: </b>
     <input type="text" class='form-control'/>
       <br>
     <%= button_tag 'Submit', class:"btn btn-default"%>
