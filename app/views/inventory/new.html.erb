@@ -7,6 +7,6 @@
                    options_for_select(@sizes),
                    include_blank: true
     %>
-    <input type="text"/>
+    <%= text_field_tag :quantity, nil %>
     <%= button_tag 'Submit' %>
 <% end %>

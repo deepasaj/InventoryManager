@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :inventory, only: [:new, :create]
+  resources :inventory, only: [:new, :create, :index]
   get 'size/index'
 
   get 'apparel_type/index'

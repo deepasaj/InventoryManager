@@ -5,5 +5,12 @@ class InventoryController < ApplicationController
   end
 
   def create
+    params_sliced = params.slice(:apparel_types, :sizes, :quantity)
+    Inventory.create(params_sliced)
+  end
+
+  def index
+    @inventories = Inventory.all
+    byebug
   end
 end
